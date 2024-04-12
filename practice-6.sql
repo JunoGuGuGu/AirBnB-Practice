@@ -15,4 +15,5 @@
 -- | Brighton Park          | 678      |
 -- | Burnside               | 10       |
 
-
+SELECT listings.neighborhood, reviews.id, reviews.listing_id, reviews.comments FROM reviews
+INNER JOIN id ON listings.id = reviews.listing_id;
